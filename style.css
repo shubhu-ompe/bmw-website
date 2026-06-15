@@ -1618,3 +1618,151 @@ font-size:16px !important;
 }
 
 }
+/* ===================================
+ADVANCED MOBILE FIX
+=================================== */
+
+@media screen and (max-width:768px){
+
+/* Logo + Title */
+.logo-section{
+flex-direction:row !important;
+justify-content:center !important;
+align-items:center !important;
+gap:12px !important;
+}
+
+.logo-section img{
+width:70px !important;
+height:70px !important;
+}
+
+.logo-section div{
+text-align:left !important;
+}
+
+.logo-section h1{
+font-size:12px !important;
+margin:0 !important;
+}
+
+.logo-section p{
+font-size:10px !important;
+margin:0 !important;
+}
+
+/* Hero Section */
+
+.hero{
+height:70vh !important;
+min-height:500px !important;
+overflow:hidden !important;
+}
+
+.hero-video{
+object-fit:cover !important;
+width:100% !important;
+height:100% !important;
+}
+
+.hero-text{
+max-width:85% !important;
+padding:10px !important;
+}
+
+.hero-text h2{
+font-size:52px !important;
+line-height:1 !important;
+}
+
+.hero-text p{
+font-size:20px !important;
+}
+
+.hero-text h3{
+font-size:24px !important;
+}
+
+.btn{
+padding:12px 28px !important;
+font-size:16px !important;
+}
+
+/* Featured Videos */
+
+.cars{
+display:grid !important;
+grid-template-columns:1fr 1fr !important;
+gap:15px !important;
+padding:10px !important;
+}
+
+.car-card{
+width:100% !important;
+margin:0 !important;
+}
+
+.car-card video{
+width:100% !important;
+height:220px !important;
+object-fit:cover !important;
+border-radius:15px !important;
+}
+
+.car-card h3{
+font-size:18px !important;
+}
+
+/* M4 Section */
+
+.m4-hero{
+height:70vh !important;
+}
+
+.m4-hero .hero-text{
+max-width:85% !important;
+text-align:right !important;
+margin-left:auto !important;
+}
+
+.m4-hero h2{
+font-size:50px !important;
+}
+
+.m4-hero p{
+font-size:18px !important;
+}
+
+.m4-hero .btn{
+display:inline-block !important;
+}
+
+/* More Cars Page */
+
+.car-card img{
+height:250px !important;
+object-fit:cover !important;
+}
+
+/* Dashboard */
+
+.dashboard-cards{
+display:grid !important;
+grid-template-columns:1fr 1fr !important;
+gap:12px !important;
+}
+
+.dash-card{
+width:100% !important;
+}
+
+/* Floating Button */
+
+.floating-btn{
+bottom:20px !important;
+right:15px !important;
+padding:14px 24px !important;
+font-size:16px !important;
+}
+
+}
