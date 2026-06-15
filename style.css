@@ -1743,3 +1743,97 @@ bottom:15px !important;
 }
 
 }
+/* ===== PHONE PREMIUM FIX ===== */
+
+@media screen and (max-width:768px){
+
+/* HEADER */
+
+.nav-buttons{
+gap:8px !important;
+margin-top:10px !important;
+}
+
+.nav-buttons a,
+.nav-buttons button{
+font-size:14px !important;
+padding:8px 12px !important;
+}
+
+#searchBox{
+height:45px !important;
+font-size:15px !important;
+}
+
+/* FEATURED SECTION */
+
+.featured h2{
+font-size:32px !important;
+margin-bottom:20px !important;
+}
+
+.cars{
+display:flex !important;
+flex-direction:column !important;
+gap:20px !important;
+padding:0 !important;
+}
+
+.car-card{
+width:100% !important;
+max-width:100% !important;
+margin:0 !important;
+padding:10px !important;
+border-radius:0 !important;
+}
+
+.car-card video{
+width:100% !important;
+height:250px !important;
+object-fit:cover !important;
+border-radius:12px !important;
+display:block !important;
+}
+
+.car-card h3{
+font-size:18px !important;
+margin-top:8px !important;
+line-height:1.2 !important;
+}
+
+/* HERO SECTIONS */
+
+.hero{
+height:65vh !important;
+}
+
+.hero-text{
+left:15px !important;
+max-width:55% !important;
+}
+
+.hero-text h2{
+font-size:28px !important;
+}
+
+.hero-text p{
+font-size:14px !important;
+}
+
+.hero-text h3{
+font-size:18px !important;
+}
+
+.hero-text .btn{
+font-size:14px !important;
+padding:10px 16px !important;
+}
+
+/* SEARCH + BUTTON AREA */
+
+header{
+padding-bottom:15px !important;
+border-bottom:1px solid #222 !important;
+}
+
+}
