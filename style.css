@@ -1577,3 +1577,44 @@ max-width:500px !important;
 }
 
 }
+@media screen and (max-width:768px){
+
+.hero{
+padding:0 !important;
+justify-content:center !important;
+}
+
+.hero-text{
+position:relative !important;
+left:auto !important;
+top:auto !important;
+transform:none !important;
+max-width:90% !important;
+text-align:center !important;
+margin:auto !important;
+padding:20px !important;
+}
+
+.m4-hero .hero-text{
+position:relative !important;
+left:auto !important;
+top:auto !important;
+transform:none !important;
+text-align:center !important;
+max-width:90% !important;
+margin:auto !important;
+}
+
+.hero h2{
+font-size:32px !important;
+}
+
+.hero h3{
+font-size:20px !important;
+}
+
+.hero p{
+font-size:16px !important;
+}
+
+}
