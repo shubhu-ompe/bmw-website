@@ -1618,14 +1618,16 @@ font-size:16px !important;
 }
 
 }
-/* ===================================
-ADVANCED MOBILE FIX
-=================================== */
+/* =========================
+PHONE FIX FINAL
+========================= */
 
 @media screen and (max-width:768px){
 
-/* Logo + Title */
+/* HEADER */
+
 .logo-section{
+display:flex !important;
 flex-direction:row !important;
 justify-content:center !important;
 align-items:center !important;
@@ -1633,136 +1635,111 @@ gap:12px !important;
 }
 
 .logo-section img{
-width:70px !important;
-height:70px !important;
-}
-
-.logo-section div{
-text-align:left !important;
+width:80px !important;
+height:80px !important;
 }
 
 .logo-section h1{
-font-size:12px !important;
+font-size:14px !important;
 margin:0 !important;
 }
 
 .logo-section p{
-font-size:10px !important;
+font-size:12px !important;
 margin:0 !important;
 }
 
-/* Hero Section */
-
-.hero{
-height:70vh !important;
-min-height:500px !important;
-overflow:hidden !important;
-}
-
-.hero-video{
-object-fit:cover !important;
-width:100% !important;
-height:100% !important;
-}
-
-.hero-text{
-max-width:85% !important;
-padding:10px !important;
-}
-
-.hero-text h2{
-font-size:52px !important;
-line-height:1 !important;
-}
-
-.hero-text p{
-font-size:20px !important;
-}
-
-.hero-text h3{
-font-size:24px !important;
-}
-
-.btn{
-padding:12px 28px !important;
-font-size:16px !important;
-}
-
-/* Featured Videos */
+/* FEATURED VIDEOS */
 
 .cars{
-display:grid !important;
-grid-template-columns:1fr 1fr !important;
-gap:15px !important;
-padding:10px !important;
+display:flex !important;
+flex-direction:column !important;
+gap:25px !important;
+padding:15px !important;
 }
 
 .car-card{
 width:100% !important;
-margin:0 !important;
+max-width:100% !important;
+margin:auto !important;
 }
 
 .car-card video{
 width:100% !important;
-height:220px !important;
-object-fit:cover !important;
+height:auto !important;
+aspect-ratio:16/9 !important;
+object-fit:contain !important;
 border-radius:15px !important;
 }
 
 .car-card h3{
-font-size:18px !important;
+font-size:24px !important;
+margin-top:10px !important;
 }
 
-/* M4 Section */
+/* M5 CS + M4 CS HERO */
 
-.m4-hero{
+.hero{
 height:70vh !important;
+padding:0 !important;
+overflow:hidden !important;
+position:relative !important;
 }
 
-.m4-hero .hero-text{
-max-width:85% !important;
-text-align:right !important;
-margin-left:auto !important;
-}
-
-.m4-hero h2{
-font-size:50px !important;
-}
-
-.m4-hero p{
-font-size:18px !important;
-}
-
-.m4-hero .btn{
-display:inline-block !important;
-}
-
-/* More Cars Page */
-
-.car-card img{
-height:250px !important;
+.hero-video{
+width:100% !important;
+height:100% !important;
 object-fit:cover !important;
 }
 
-/* Dashboard */
-
-.dashboard-cards{
-display:grid !important;
-grid-template-columns:1fr 1fr !important;
-gap:12px !important;
+.hero-text{
+position:absolute !important;
+left:20px !important;
+top:50% !important;
+transform:translateY(-50%) !important;
+text-align:left !important;
+max-width:65% !important;
+padding:0 !important;
+margin:0 !important;
 }
 
-.dash-card{
-width:100% !important;
+.hero-text h2{
+font-size:42px !important;
+line-height:1 !important;
 }
 
-/* Floating Button */
+.hero-text p{
+font-size:15px !important;
+}
+
+.hero-text h3{
+font-size:26px !important;
+}
+
+.hero-text .btn{
+width:auto !important;
+padding:12px 24px !important;
+}
+
+/* M4 SECTION */
+
+.m4-hero .hero-text{
+left:20px !important;
+text-align:left !important;
+}
+
+/* BUTTON FIX */
+
+.btn{
+display:inline-block !important;
+width:auto !important;
+}
+
+/* ENQUIRE BUTTON */
 
 .floating-btn{
-bottom:20px !important;
 right:15px !important;
-padding:14px 24px !important;
-font-size:16px !important;
+bottom:15px !important;
 }
 
 }
