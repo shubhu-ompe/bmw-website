@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHUBHAM OMPEEE EXPORTS | BMW LUXURY MOTORS</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+
+<div class="logo-section">
+
+<a href="intro.html">
+<img src="images/bmw-logo.jpg" alt="BMW Logo">
+</a>
+
+<div>
+<h1>SHUBHAM OMPEEE EXPORTS</h1>
+<p>BMW LUXURY MOTORS</p>
+</div>
+
+</div>
+
+<div class="nav-buttons">
+
+<div class="search-container">
+
+<input
+type="text"
+id="searchBox"
+placeholder="Search BMW Models...">
+
+<div id="suggestions"></div>
+
+</div>
+
+<button onclick="searchCar()">🔍</button>
+
+<a href="account.html">👤 Account</a>
+<a href="favourites.html">❤️ Favourite</a>
+<a href="recent.html" id="recentCount">🕒 Recent</a>
+<a href="https://maps.google.com/?q=BMW+Deutsche+Motoren+Rajouri+Garden+Delhi" target="_blank">📍 Map</a>
+
+<button onclick="toggleMode()">🌙 Dark Mode</button>
+
+</div>
+
+</header>
+<section class="hero">
+
+<video autoplay muted loop playsinline class="hero-video">
+<source src="video/bmw-hero.mp4" type="video/mp4">
+</video>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-text">
+<h2>BMW M5 CS</h2>
+
+<p>
+The most powerful production BMW sedan ever built.
+</p>
+
+<h3>Starting From ₹2.2 Crore</h3>
+
+<a href="more-cars.html" class="btn">
+More Cars
+</a>
+
+</div>
+
+</section>
+
+<section class="featured">
+
+<h2>Featured BMW Collection</h2>
+
+<div class="cars">
+
+<div class="car-card">
+<video autoplay muted loop controls>
+<source src="video/video.1.mp4" type="video/mp4">
+</video>
+<h3>BMW M3 CS</h3>
+</div>
+
+<div class="car-card">
+<video autoplay muted loop controls>
+<source src="video/video.2.mp4" type="video/mp4">
+</video>
+<h3>BMW M5 CS</h3>
+</div>
+
+<div class="car-card">
+<video autoplay muted loop controls>
+<source src="video/video.3.mp4" type="video/mp4">
+</video>
+<h3>BMW M1</h3>
+</div>
+
+<div class="car-card">
+<video autoplay muted loop controls>
+<source src="video/video.4.mp4" type="video/mp4">
+</video>
+<h3>BMW M3</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="hero m4-hero">
+
+<video autoplay muted loop playsinline class="hero-video">
+<source src="video/bmw-m4cs.mp4" type="video/mp4">
+</video>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-text">
+
+<h2>BMW M4 CS</h2>
+
+<p>
+Track-inspired performance meets everyday luxury. Built for ultimate driving excitement.
+</p>
+
+<h3>Starting From ₹1.89 Crore</h3>
+
+<a href="m4cs.html" class="btn">
+Explore BMW M4 CS
+</a>
+
+</div>
+
+</section>
+
+<section class="dashboard">
+
+<h2>📊 BMW Statistics Dashboard</h2>
+
+<div class="dashboard-cards">
+
+<div class="dash-card">
+<h3>15</h3>
+<p>Total Cars</p>
+</div>
+
+<div class="dash-card">
+<h3>3</h3>
+<p>Electric Cars</p>
+</div>
+
+<div class="dash-card">
+<h3>6</h3>
+<p>M Cars</p>
+</div>
+
+<div class="dash-card">
+<h3>4</h3>
+<p>SUV Models</p>
+</div>
+
+<div class="dash-card">
+<h3>2</h3>
+<p>Luxury Sedans</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="car-day">
+
+<h2>⭐ Car of the Day</h2>
+
+<div id="carOfDay"></div>
+
+</section>
+
+<div class="compare-box">
+
+<h2>⚡ Compare BMW Cars</h2>
+
+<select id="car1">
+<option>BMW M5 CS</option>
+<option>BMW M8 Competition</option>
+<option>BMW XM</option>
+<option>BMW X7</option>
+<option>BMW ALPINA B8 Gran Coupe</option>
+<option>BMW M5 Sedan</option>
+</select>
+
+<select id="car2">
+<option>BMW M8 Competition</option>
+<option>BMW M5 CS</option>
+<option>BMW XM</option>
+<option>BMW X7</option>
+<option>BMW ALPINA B8 Gran Coupe</option>
+<option>BMW M5 Sedan</option>
+</select>
+
+<button onclick="compareCars()">Compare</button>
+
+<div id="compareResult"></div>
+
+</div>
+<p class="ai-subtitle">
+Ask anything about BMW models available at SHUBHAM OMPEEE EXPORTS
+</p>
+<div class="ai-chat">
+
+<h2 class="ai-title">
+<img src="images/bmw-logo.jpg" class="ai-logo">
+BMW AI Assistant
+</h2>
+
+<div id="chatBox"></div>
+
+<input
+type="text"
+id="userInput"
+placeholder="Ask about BMW cars..."
+>
+
+<button onclick="askBMWAI()">
+Send
+</button>
+
+</div>
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-box">
+📧 shubhamraj2468sr@gmail.com
+</div>
+
+</section>
+
+<footer>
+© 2026 SHUBHAM OMPEEE EXPORTS | BMW LUXURY MOTORS
+<a href="mailto:shubhamraj2468sr@gmail.com" class="floating-btn">
+📞 Enquire
+</a>
+
+<script src="script.js"></script>
+
+<footer>
+
+<p>© 2026 SHUBHAM OMPEEE EXPORTS. All Rights Reserved.</p>
+
+<p>
+This is an independent fan/portfolio project and is not affiliated with BMW AG.
+</p>
+
+</footer>
+
+</body>
+</html>

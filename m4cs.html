@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMW M4 CS</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+
+<div class="logo-section">
+<img src="images/bmw-logo.jpg">
+
+<div>
+<h1>BMW M4 CS</h1>
+<p>SHUBHAM OMPEEE EXPORTS</p>
+</div>
+
+</div>
+
+<div class="nav-buttons">
+<a href="index.html">🏠 Home</a>
+<a href="more-cars.html">🚗 More Cars</a>
+<a href="favourites.html">❤️ Favourite</a>
+</div>
+
+</header>
+
+<section class="car-details">
+
+<h1 class="car-title">
+BMW M4 CS
+</h1>
+<div style="width:90%;margin:30px auto;">
+
+<video
+width="100%"
+autoplay
+muted
+loop
+controls
+style="
+border-radius:20px;
+height:auto;
+max-height:800px;
+">
+
+<source src="video/video.10.mp4" type="video/mp4">
+
+</video>
+
+</div>
+<div class="gallery">
+
+<img src="images/BMW-M4-CS-1.jpg">
+<img src="images/BMW-M4-CS-2.jpg">
+<img src="images/BMW-M4-CS-3.jpg">
+<img src="images/BMW-M4-CS-4.jpg">
+
+</div>
+
+<div class="spec-box">
+
+<h2>Specifications</h2>
+
+<p><strong>Price:</strong> ₹1.55 Crore</p>
+
+<p><strong>Engine:</strong> 3.0L Twin Turbo Inline-6</p>
+
+<p><strong>Power:</strong> 550 HP</p>
+
+<p><strong>Torque:</strong> 650 Nm</p>
+
+<p><strong>Top Speed:</strong> 302 km/h</p>
+
+<p><strong>Mileage:</strong> 10.2 km/l</p>
+
+<p><strong>Transmission:</strong> 8-Speed M Steptronic</p>
+
+<p><strong>Drive Type:</strong> xDrive AWD</p>
+
+<p><strong>0-100 km/h:</strong> 3.4 Seconds</p>
+
+<button onclick="addFav(
+'BMW M4 CS',
+'images/BMW-M4-CS-1.jpg',
+'m4cs.html'
+)">
+❤️ Add Favourite </button>
+
+<button onclick="enquireCar('BMW M4 CS')">
+📞 Enquire Now
+</button>
+
+</div>
+
+</section>
+
+<footer style="text-align:center;padding:30px;margin-top:40px;">
+© 2026 SHUBHAM OMPEEE EXPORTS | BMW M4 CS
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+saveRecentCar(
+"BMW M4 CS",
+"images/BMW-M4-CS-1.jpg",
+"m4cs.html"
+);
+</script>
+</body>
+</html>

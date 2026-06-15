@@ -1,0 +1,82 @@
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMW Member Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+
+<div class="logo-section">
+
+<a href="intro.html">
+<img src="images/bmw-logo.jpg">
+</a>
+
+<div>
+
+<h1>SHUBHAM OMPEEE EXPORTS</h1>
+
+<p>BMW LUXURY MOTORS</p>
+
+</div>
+
+</div>
+
+<div class="nav-buttons">
+
+<a href="index.html">🏠 Home</a>
+
+</div>
+
+</header>
+<div class="login-container">
+<div class="login-box">
+
+<img src="images/bmw-logo.jpg" class="login-logo">
+
+<h2>SHUBHAM OMPEEE EXPORTS</h2>
+<p>BMW LUXURY MOTORS</p>
+
+<input type="email" id="email" placeholder="Email address">
+
+<input type="password" id="password" placeholder="Password">
+
+<button class="login-btn" onclick="loginUser()">
+🔑 Login
+</button>
+
+<hr>
+
+<button class="login-btn" onclick="registerUser()">
+👤 Create Account
+</button>
+
+<h3 id="loginStatus"></h3>
+
+<div class="divider">
+<span>OR</span>
+</div>
+
+<div id="g_id_onload"
+     data-client_id="332685078946-4aa74omqqik9b5vinmivr32slk2p3000.apps.googleusercontent.com"
+     data-callback="handleCredentialResponse">
+</div>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-size="large"
+     data-theme="outline"
+     data-text="continue_with"
+     data-shape="pill">
+</div>
+
+</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

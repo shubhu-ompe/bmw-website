@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favourite Cars</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+
+<div class="logo-section">
+<img src="images/bmw-logo.jpg" alt="BMW Logo">
+
+<div>
+<h1>SHUBHAM OMPEEE EXPORTS</h1>
+<p>BMW LUXURY MOTORS</p>
+</div>
+
+</div>
+
+<div class="nav-buttons">
+<a href="index.html">🏠 Home</a>
+<a href="more-cars.html">🚗 More Cars</a>
+<a href="account.html">👤 Account</a>
+<a href="recent.html">🕒 Recent</a>
+</div>
+
+</header>
+
+<h1 style="text-align:center;margin:30px 0;">
+❤️ Favourite Cars
+</h1>
+
+<div id="favList" class="cars"></div>
+
+<script>
+
+function loadFavs(){
+
+let favs =
+JSON.parse(localStorage.getItem("bmwFavs")) || [];
+
+let favList =
+document.getElementById("favList");
+
+if(favs.length === 0){
+
+favList.innerHTML = `
+<h2 style="text-align:center;width:100%;">
+No Favourite Cars Added Yet ❤️
+</h2>
+`;
+
+return;
+}
+
+let html = "";
+
+favs.forEach((car,index)=>{
+
+html += `
+
+<div class="car-card">
+
+<a href="${car.page}">
+
+<img src="${car.image}"
+style="
+width:100%;
+height:250px;
+object-fit:contain;
+background:#111;
+border-radius:12px;
+">
+
+</a>
+
+<h3 style="text-align:center;padding:10px;">
+${car.name}
+</h3>
+
+<button onclick="removeFav(${index})">
+❌ Remove Favourite
+</button>
+
+</div>
+
+`;
+
+});
+
+favList.innerHTML = html;
+
+}
+
+function removeFav(index){
+
+let favs =
+JSON.parse(localStorage.getItem("bmwFavs")) || [];
+
+favs.splice(index,1);
+
+localStorage.setItem(
+"bmwFavs",
+JSON.stringify(favs)
+);
+
+loadFavs();
+
+}
+
+loadFavs();
+
+</script>
+
+</body>
+</html>

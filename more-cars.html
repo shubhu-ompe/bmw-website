@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMW Collection</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo-section">
+<img src="images/bmw-logo.jpg">
+<div>
+<h1>SHUBHAM OMPEEE EXPORTS</h1>
+<p>BMW LUXURY MOTORS</p>
+</div>
+</div>
+
+<div class="nav-buttons">
+
+    <div class="search-container">
+
+        <input type="text" id="searchBox" placeholder="Search BMW Models...">
+
+        <button onclick="searchCar()">🔍</button>
+
+        <div id="suggestions"></div>
+
+    </div>
+
+    <a href="index.html">🏠 Home</a>
+    <a href="favourites.html">❤️ Favourite</a>
+   <a href="recent.html" id="recentCount">🕒 Recent</a>
+    <a href="account.html">👤 Account</a>
+
+</div>
+</header>
+
+<section class="featured">
+
+<h2>BMW Collection</h2>
+
+<div class="cars">
+    <div class="car-card">
+<a href="alpina.html">
+<img src="images/BMW-ALPINA-1.jpg">
+</a>
+<h3>BMW ALPINA B8</h3>
+<button onclick="addFav(
+'BMW ALPINA B8',
+'images/BMW-ALPINA-1.jpg',
+'alpina.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="i5m60.html">
+<img src="images/BMW-i5-M60-1.jpg">
+</a>
+<h3>BMW i5 M60</h3>
+<button onclick="addFav(
+'BMW i5 M60',
+'images/BMW-i5-M60-1.jpg',
+'i5m60.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="i7.html">
+<img src="images/BMW-i7-1.jpg">
+</a>
+<h3>BMW i7</h3>
+<button onclick="addFav(
+'BMW i7',
+'images/BMW-i7-1.jpg',
+'i7.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="ix.html">
+<img src="images/BMW-iX-1.jpg">
+</a>
+<h3>BMW iX</h3>
+<button onclick="addFav(
+'BMW iX',
+'images/BMW-iX-1.jpg',
+'ix.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="m3cs.html">
+<img src="images/BMW-M3-CS-1.jpg">
+</a>
+<h3>BMW M3 CS</h3>
+<button onclick="addFav(
+'BMW M3 CS',
+'images/BMW-M3-CS-1.jpg',
+'m3cs.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="m4cs.html">
+<img src="images/BMW-M4-CS-1.jpg">
+</a>
+<h3>BMW M4 CS</h3>
+<button onclick="addFav(
+'BMW M4 CS',
+'images/BMW-M4-CS-1.jpg',
+'m4cs.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="m5cs.html">
+<img src="images/BMW-M5-CS-1.jpg">
+</a>
+<h3>BMW M5 CS</h3>
+<button onclick="addFav(
+'BMW M5 CS',
+'images/BMW-M5-CS-1.jpg',
+'m5cs.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="m5sedan.html">
+<img src="images/BMW-M5-Sedan-1.jpg">
+</a>
+<h3>BMW M5 Sedan</h3>
+<button onclick="addFav(
+'BMW M5 Sedan',
+'images/BMW-M5-Sedan-1.jpg',
+'m5sedan.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="m8cs.html">
+<img src="images/BMW-M8-CS-1.jpg">
+</a>
+<h3>BMW M8 CS</h3>
+<button onclick="addFav(
+'BMW M8 CS',
+'images/BMW-M8-CS-1.jpg',
+'m8cs.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="x5m.html">
+<img src="images/BMW-X5-M-1.jpg">
+</a>
+<h3>BMW X5 M</h3>
+<button onclick="addFav(
+'BMW X5 M',
+'images/BMW-X5-M-1.jpg',
+'x5m.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="x6.html">
+<img src="images/BMW-X6-1.jpg">
+</a>
+<h3>BMW X6</h3>
+<button onclick="addFav(
+'BMW X6',
+'images/BMW-X6-1.jpg',
+'x6.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="x7.html">
+<img src="images/BMW-X7-1.jpg">
+</a>
+<h3>BMW X7</h3>
+<button onclick="addFav(
+'BMW X7',
+'images/BMW-X7-1.jpg',
+'x7.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="xm.html">
+<img src="images/BMW-XM-1.jpg">
+</a>
+<h3>BMW XM</h3>
+<button onclick="addFav(
+'BMW XM',
+'images/BMW-XM-1.jpg',
+'xm.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="z4roadster.html">
+<img src="images/BMW-Z4-Roadster-1.jpg">
+</a>
+<h3>BMW Z4 Roadster</h3>
+<button onclick="addFav(
+'BMW Z4 Roadster',
+'images/BMW-Z4-Roadster-1.jpg',
+'z4roadster.html'
+)">
+❤️ Add Favourite
+</button>
+
+</div>
+
+<div class="car-card">
+<a href="m2cs.html">
+<img src="images/BMW-M2-CS-1.jpg">
+</a>
+<h3>BMW M2 CS</h3>
+<button onclick="addFav(
+'BMW M2 CS',
+'images/BMW-M2-CS-1.jpg',
+'m2cs.html'
+)">
+❤️ Add Favourite
+</button>   
+
+</div>
+
+</section>
+<select id="car1">
+<option>BMW M5 CS</option>
+<option>BMW M8 Competition</option>
+<option>BMW XM</option>
+<option>BMW X7</option>
+<option>BMW M4 Competition</option>
+<option>BMW M3 Competition</option>
+<option>BMW X5 M</option>
+<option>BMW X6 M</option>
+<option>BMW i7</option>
+<option>BMW i5 M60</option>
+<option>BMW iX</option>
+<option>BMW Z4 Roadster</option>
+<option>BMW ALPINA B8 Gran Coupe</option>
+<option>BMW M5 Sedan</option>
+<option>BMW 3 Series</option>
+</select>
+
+<select id="car2">
+<option>BMW M8 Competition</option>
+<option>BMW M5 CS</option>
+<option>BMW XM</option>
+<option>BMW X7</option>
+<option>BMW M4 Competition</option>
+<option>BMW M3 Competition</option>
+<option>BMW X5 M</option>
+<option>BMW X6 M</option>
+<option>BMW i7</option>
+<option>BMW i5 M60</option>
+<option>BMW iX</option>
+<option>BMW Z4 Roadster</option>
+<option>BMW ALPINA B8 Gran Coupe</option>
+<option>BMW M5 Sedan</option>
+<option>BMW 3 Series</option>
+</select>
+
+<button onclick="compareCars()">Compare</button>
+
+<div id="compareResult"></div>
+<script src="script.js"></script>
+
+<footer>
+
+<p>© 2026 SHUBHAM OMPEEE EXPORTS. All Rights Reserved.</p>
+
+<p>
+This is an independent fan/portfolio project and is not affiliated with BMW AG.
+</p>
+
+</footer>
+
+</body>
+</html>

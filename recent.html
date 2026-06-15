@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recently Viewed Cars</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+
+<div class="logo-section">
+<img src="images/bmw-logo.jpg">
+
+<div>
+<h1>SHUBHAM OMPEEE EXPORTS</h1>
+<p>BMW LUXURY MOTORS</p>
+</div>
+
+</div>
+
+<div class="nav-buttons">
+
+<a href="index.html">🏠 Home</a>
+<a href="more-cars.html">🚗 More Cars</a>
+<a href="favourites.html">❤️ Favourite</a>
+<a href="account.html">👤 Account</a>
+
+</div>
+
+</header>
+<h1 style="text-align:center;margin:30px 0;">
+🕒 Recently Viewed Cars
+</h1>
+
+<div id="recentList" class="cars"></div>
+
+<script>
+
+let recent =
+JSON.parse(localStorage.getItem("recentCars")) || [];
+
+let html = "";
+
+if(recent.length === 0){
+
+html = `
+<h2 style="text-align:center;width:100%;">
+No Recently Viewed Cars Yet 🚗
+</h2>
+`;
+
+}else{
+
+recent.forEach(car=>{
+
+html += `
+<div class="car-card">
+
+<a href="${car.page}"
+style="text-decoration:none;color:inherit;">
+
+<img src="${car.image}"
+style="
+width:100%;
+height:350px;
+object-fit:contain;
+background:#111;
+border-radius:15px;
+">
+
+<h2 style="
+padding:15px;
+text-align:center;
+">
+${car.name}
+</h2>
+
+</a>
+
+</div>
+`;
+
+});
+
+}
+
+document.getElementById("recentList").innerHTML = html;
+
+</script>
+
+</body>
+</html>
