@@ -1904,3 +1904,15 @@ border-radius:15px !important;
 }
 
 }
+/* ===== M5 CS VIDEO MOBILE FIX ===== */
+
+@media only screen and (max-width:768px){
+
+video{
+max-height:250px !important;
+height:auto !important;
+width:100% !important;
+object-fit:cover !important;
+}
+
+}
