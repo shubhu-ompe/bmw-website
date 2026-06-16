@@ -115,3 +115,55 @@ transform:scale(1.08);
 }
 
 }
+/* ===== MOBILE INTRO FIX ===== */
+
+@media screen and (max-width:768px){
+
+.brand-row{
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+gap:15px !important;
+width:100% !important;
+}
+
+.bmw-logo{
+width:90px !important;
+height:auto !important;
+flex-shrink:0 !important;
+}
+
+.brand-text h1{
+font-size:48px !important;
+line-height:0.95 !important;
+margin:0 !important;
+word-break:break-word !important;
+}
+
+.owner{
+font-size:18px !important;
+letter-spacing:6px !important;
+text-align:center !important;
+padding:0 15px !important;
+}
+
+}
+
+/* Small Phones */
+
+@media screen and (max-width:480px){
+
+.bmw-logo{
+width:70px !important;
+}
+
+.brand-text h1{
+font-size:34px !important;
+}
+
+.owner{
+font-size:12px !important;
+letter-spacing:4px !important;
+}
+
+}
