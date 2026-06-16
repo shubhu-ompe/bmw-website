@@ -1961,3 +1961,60 @@ color:#fff !important;
 #bmwLogo{
 cursor:pointer;
 }
+/* ===== INTRO PAGE MOBILE FIX ===== */
+
+@media screen and (max-width:768px){
+
+.intro-container,
+.intro-content,
+.intro-hero{
+width:100% !important;
+overflow:hidden !important;
+}
+
+.intro-logo,
+.intro-logo img{
+width:120px !important;
+height:auto !important;
+max-width:30vw !important;
+}
+
+.intro-title,
+.intro-content h1{
+font-size:42px !important;
+line-height:1.05 !important;
+letter-spacing:1px !important;
+word-break:break-word !important;
+}
+
+.intro-subtitle,
+.intro-content h2,
+.intro-content p{
+font-size:20px !important;
+letter-spacing:4px !important;
+}
+
+}
+
+/* Extra small phones */
+
+@media screen and (max-width:480px){
+
+.intro-logo,
+.intro-logo img{
+width:90px !important;
+}
+
+.intro-title,
+.intro-content h1{
+font-size:30px !important;
+}
+
+.intro-subtitle,
+.intro-content h2,
+.intro-content p{
+font-size:14px !important;
+letter-spacing:3px !important;
+}
+
+}
