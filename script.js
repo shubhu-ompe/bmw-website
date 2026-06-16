@@ -914,3 +914,21 @@ JSON.stringify(favs)
 );
 
 }
+// ===== UNIVERSAL ENQUIRE FIX =====
+
+document.addEventListener("DOMContentLoaded", () => {
+
+document.querySelectorAll(".floating-btn").forEach(btn => {
+
+btn.addEventListener("click", function(e){
+
+e.preventDefault();
+
+window.location.href =
+"mailto:shubhamraj2468sr@gmail.com?subject=BMW%20Car%20Enquiry";
+
+});
+
+});
+
+});
