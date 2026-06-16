@@ -1916,3 +1916,45 @@ object-fit:cover !important;
 }
 
 }
+/* ===== PERMANENT WHITE TEXT FIX ===== */
+
+.hero-text,
+.hero-text h1,
+.hero-text h2,
+.hero-text h3,
+.hero-text p,
+.hero-text a{
+color:#fff !important;
+}
+
+.dashboard,
+.dashboard h2,
+.dashboard h3,
+.dashboard p,
+.dash-card,
+.dash-card h3,
+.dash-card p{
+color:#fff !important;
+}
+
+.car-day,
+.car-day h2,
+.car-day h3,
+.car-day p,
+#carOfDay{
+color:#fff !important;
+}
+
+.compare-box,
+.compare-box h2,
+.compare-box h3,
+.compare-box p,
+#compareResult{
+color:#fff !important;
+}
+
+.ai-title,
+.ai-subtitle,
+.ai-chat h2{
+color:#fff !important;
+}
