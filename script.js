@@ -932,3 +932,22 @@ window.location.href =
 });
 
 });
+const bmwLogo = document.getElementById("bmwLogo");
+
+if(bmwLogo){
+
+bmwLogo.addEventListener("click", function(){
+
+this.style.transition = "transform 1s ease";
+
+this.style.transform = "rotate(360deg) scale(1.1)";
+
+setTimeout(() => {
+
+this.style.transform = "rotate(0deg) scale(1)";
+
+},1000);
+
+});
+
+}
