@@ -1890,3 +1890,17 @@ text-align:left !important;
 }
 
 }
+/* ===== VIDEO FINAL OVERRIDE ===== */
+
+@media only screen and (max-width:768px){
+
+.car-card video{
+width:100% !important;
+aspect-ratio:16/9 !important;
+height:auto !important;
+object-fit:cover !important;
+display:block !important;
+border-radius:15px !important;
+}
+
+}
