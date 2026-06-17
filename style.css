@@ -2055,3 +2055,120 @@ display:flex !important;
 justify-content:center !important;
 width:100% !important;
 }
+/* MORE BMW COLLECTION */
+
+.more-featured{
+
+padding:80px 20px;
+text-align:center;
+background:#050505;
+
+}
+
+.more-featured h2{
+
+font-size:42px;
+color:white;
+margin-bottom:15px;
+
+}
+
+.more-featured p{
+
+color:#aaa;
+font-size:18px;
+margin-bottom:30px;
+
+}
+
+.featured-btn{
+
+display:inline-block;
+padding:15px 35px;
+background:#1c69d4;
+color:white;
+text-decoration:none;
+font-weight:bold;
+border-radius:12px;
+transition:.3s;
+
+}
+
+.featured-btn:hover{
+
+transform:translateY(-5px);
+background:#3385ff;
+
+}
+
+/* GALLERY PAGE */
+
+.featured-page{
+
+padding:60px;
+background:black;
+min-height:100vh;
+
+}
+
+.featured-page h1{
+
+text-align:center;
+color:white;
+font-size:50px;
+margin-bottom:40px;
+
+}
+
+.video-grid{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+
+}
+
+.video-card{
+
+background:#111;
+padding:15px;
+border-radius:15px;
+
+}
+
+.video-card video{
+
+width:100%;
+border-radius:12px;
+
+}
+@media screen and (max-width:768px){
+
+.video-grid{
+
+grid-template-columns:1fr !important;
+
+}
+
+.video-card video{
+
+width:100% !important;
+aspect-ratio:16/9 !important;
+height:auto !important;
+object-fit:cover !important;
+
+}
+
+.featured-page{
+
+padding:20px !important;
+
+}
+
+.featured-page h1{
+
+font-size:32px !important;
+
+}
+
+}
