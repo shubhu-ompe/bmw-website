@@ -2223,3 +2223,10 @@ max-height:none !important;
 }
 
 }
+.video-card video{
+width:100% !important;
+height:auto !important;
+object-fit:contain !important;
+aspect-ratio:auto !important;
+display:block !important;
+}
