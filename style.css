@@ -2018,3 +2018,40 @@ letter-spacing:3px !important;
 }
 
 }
+/* ACCOUNT PAGE FIX */
+
+.login-container{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.login-box{
+width:100% !important;
+max-width:500px !important;
+transform:none !important;
+zoom:1 !important;
+}
+
+/* Phone */
+
+@media screen and (max-width:768px){
+
+.login-box{
+max-width:95% !important;
+padding:25px !important;
+}
+
+.login-logo{
+width:90px !important;
+height:90px !important;
+}
+
+}
+.g_id_signin{
+display:flex !important;
+justify-content:center !important;
+width:100% !important;
+}
